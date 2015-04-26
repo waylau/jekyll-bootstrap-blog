@@ -1,0 +1,37 @@
+---
+layout: page
+title: 标签
+permalink: /tags/
+---
+{% capture tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag = tags | split:',' | sort %}
+<h2 class="category">标签</h2>
+
+<div id='tag_cloud'>
+    {% for tag in site.tags %}
+    <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    {% endfor %}
+</div>
+
+<hr id="line"/>
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+{% capture word %}{{ tag[item] | strip_newlines }}{% endcapture %}
+<h2 class="category" id="{{ word }}">{{ word }}</h2>
+{% for post in site.tags[word] %}{% if post.title != null %}
+<ul><li class="category-sub">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a class="category-sub-title" href="{{ post.url }}" >{{ post.title }}</a></li></ul>
+{% endif %}{% endfor %}
+{% endunless %}{% endfor %}
+<br/><br/>
+
+<script src="/scripts/jquery-1.11.2.min.js"></script>
+<script src="/scripts/jquery.tagcloud.js"></script>
+<script language="javascript">
+    $.fn.tagcloud.defaults = {
+        size: {start: 1, end: 3, unit: 'em'},
+        color: {start: '#F01F00', end: '#C2AF22'}
+    };
+
+    $(function () {
+        $('#tag_cloud a').tagcloud();
+    });
+</script>

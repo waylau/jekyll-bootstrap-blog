@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+
+  <body>
+
+  <nav class="navbar navbar-static-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {% for page in site.pages %}
+          {% if page.title %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-8 blog-main">
+        {{ content }}
+       </div>
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        {% include right.html %}
+
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+  {% include footer.html %}
+
+  <a id="goToTop" href="#">
+    <i class="fa fa-chevron-up fa-3x"></i>
+  </a>
+
+</body>
+<script src="/scripts/jquery-1.11.2.min.js"></script>
+
+<script src="/scripts/bootstrap.min.js"></script>
+<script src="/scripts/main.js" ></script>
+{% if site.duoshuo_username %}
+<script>
+  var duoshuoQuery = {short_name:"{{ site.duoshuo_username }}"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+{% endif %}
+
+</html>

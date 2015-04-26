@@ -1,0 +1,19 @@
+# Site settings
+title: Way Lau's Personal Site | www.waylau.com
+name: Way Lau's Personal Site
+url: "http://www.waylau.com"
+email: waylau521@gmail.com
+description: Way Lau's Personal Site | www.waylau.com.
+baseurl: "" # the subpath of your site, e.g. /blog/
+twitter_username: waylau521
+github_username:  waylau
+weibo_username: waylau521
+duoshuo_username: waylau
+baidushare_id: 89860593
+rss_url: "/feed.xml"
+# Build settings
+highlighter: pygments
+markdown: rdiscount
+permalink: /:title/
+paginate: 6
+paginate_path: page/:num
