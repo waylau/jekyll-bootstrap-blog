@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 书籍
-permalink: /book/
+title: Books
+permalink: /books/
 ---
 
 ##以下是作者的书籍作品

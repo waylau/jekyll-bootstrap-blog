@@ -1,5 +1,5 @@
 # Site settings
-title: Way Lau's Personal Site | www.waylau.com
+title: Way Lau's Personal Site
 name: Way Lau's Personal Site
 url: "http://www.waylau.com"
 email: waylau521@gmail.com
@@ -10,6 +10,7 @@ github_username:  waylau
 weibo_username: waylau521
 duoshuo_username: waylau
 baidushare_id: 89860593
+baidutongji_id: 28cf5fa48a599e39c5cc760931de942f
 rss_url: "/feed.xml"
 # Build settings
 highlighter: pygments

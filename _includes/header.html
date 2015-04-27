@@ -1,5 +1,4 @@
-
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+<nav class="navbar navbar-static-top navbar-inverse">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -12,11 +11,11 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-      {% for page in site.pages %}
-      {% if page.title %}
+        {% for page in site.pages %}
+        {% if page.title %}
         <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-      {% endif %}
-      {% endfor %}
+        {% endif %}
+        {% endfor %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>

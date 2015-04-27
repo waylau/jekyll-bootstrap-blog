@@ -1,19 +1,10 @@
 ---
 layout: page
-title: 分类
+title: Categories
 permalink: /categories/
 ---
- 
-{% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign category = categories | split:',' | sort %}
-<div class="category-box">
-    <ul>
-        {% for item in (0..site.categories.size) %}{% unless forloop.last %}
-        {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
-        <li class="category-box-sub"><a href="#{{ word }}">{{ word }}&nbsp;<sup>{{ site.categories[word].size }}</sup></a></li>
-        {% endunless %}{% endfor %}
-    </ul>
-</div>
+
+{% include categories.html %}
 <hr id="line"/>
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}

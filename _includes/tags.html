@@ -1,0 +1,28 @@
+{% capture tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag = tags | split:',' | sort %}
+<div id='tag_cloud'>
+    {% for tag in site.tags %}
+    <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    {% endfor %}
+</div>
+
+<script src="/scripts/jquery-1.11.2.min.js"></script>
+<script src="/scripts/jquery.tagcloud.js" ></script>
+<script >
+    var jq = jQuery.noConflict();
+
+    jq.fn.tagcloud.defaults = {
+        size: {
+            start: 12,
+            end: 22,
+            unit: 'px'
+        },
+        color: {
+            start: '#F01F00', end: '#C2AF22'
+        }
+    };
+
+    jq(function() {
+        jq('#tag_cloud a').tagcloud();
+    });
+</script>

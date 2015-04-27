@@ -3,30 +3,27 @@ layout: default
 index: true
 ---
 
-<div class="home">
+{% for post in paginator.posts %}
+<article class="post tag-lumen tag-wei-kuang-jia">
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p>
-        {{ post.date | date: "%Y" }}-{{ post.date | date: "%m" }}-{{ post.date | date: "%d" }}
-        <i class="fa fa-bookmark"></i>
-        {% for cat in post.categories %}
-        <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>
-        {% endfor %}
-        </p>
-      </li>
-      <div class="post-main">
-        {{ post.content | split:'<!-- more -->'| first }}
-        <div class="readall"><a href="{{ post.url }}" >More<i class="fa fa-chevron-right"></i></a></div>
-      </div>
+    <h2 class="post-title">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2 >
+    {{ post.date | date: "%Y" }}-{{ post.date | date: "%m" }}-{{ post.date | date: "%d" }}
+    <i class="fa fa-bookmark"></i>
+    {% for cat in post.categories %}
+    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>
     {% endfor %}
-  </ul>
+    </p>
 
-</div>
+  <div class="post-main">
+    {{ post.content | split:'<!-- more -->'| first }}
+    <div class="readall"><a href="{{ post.url }}" >More<i class="fa fa-chevron-right"></i></a></div>
+  </div>
+</article>
+<hr/>
+{% endfor %}
+
 
 
 <!-- Pagination links -->

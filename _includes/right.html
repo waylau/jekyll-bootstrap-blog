@@ -46,7 +46,7 @@
     </ul>
   </div>
   <div class="row">
-  <h4>分类</h4>
+  <h4>Categories</h4>
   {% capture categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
   {% assign category = categories | split:',' | sort %}
   <div class="category-box">
@@ -57,6 +57,11 @@
       {% endunless %}{% endfor %}
     </ul>
   </div>
+  </div>
+
+  <div class="row">
+    <h4>Tags</h4>
+    {% include tags.html %}
   </div>
 
   <div class="row">

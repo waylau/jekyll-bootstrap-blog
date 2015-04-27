@@ -1,5 +1,15 @@
-# jekyll-bootstrap-blog
-A theme for Jekyll to build a personal blog, based on [Bootstrap 3](http://getbootstrap.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [jQuery](http://jquery.com/)
+---
+layout: post
+title: 关于 jekyll 博客主题 jekyll-bootstrap-blog
+date: 2015-04-27 02:41
+author: admin
+comments: true
+categories: [Blog,Jekyll]
+tags: [Blog,Jekyll,jekyll-bootstrap-blog]
+---
+
+
+A theme for Jekyll to build a personal blog. See[https://github.com/waylau/jekyll-bootstrap-blog](https://github.com/waylau/jekyll-bootstrap-blog)
 
 ##Screenshots
 
@@ -70,5 +80,5 @@ Add content below this and save the post in `_posts` directory (you will have to
 
 Feel free to fork and contribute to the project, just create a pull request.
 
-Open sourced under [MIT License](LICENSE) 
+Open sourced under [MIT License](LICENSE.md) 
 
