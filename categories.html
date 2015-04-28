@@ -5,6 +5,7 @@ permalink: /categories/
 ---
 
 {% include categories.html %}
+
 <hr id="line"/>
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
