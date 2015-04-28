@@ -1,6 +1,10 @@
 # jekyll-bootstrap-blog
 A theme for Jekyll to build a personal blog, based on [Bootstrap 3](http://getbootstrap.com/), [Font Awesome](http://fortawesome.github.io/Font-Awesome/) and [jQuery](http://jquery.com/)
 
+* Clean
+* Responsive
+* Mobile First
+
 ##Screenshots
 
 ![](http://99btgc01.info/uploads/2015/04/001%285%29.jpg)
