@@ -8,11 +8,11 @@ layout: default
     <p class="post-meta"> {{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }}{% if page.meta %}  {{ page.meta }}{% endif %}
     <i class="fa fa-bookmark"></i>
     {% for cat in page.categories %}
-    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == category %}, {% endunless %}
+    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == category %}  {% endunless %}
     {% endfor %}
     <i class="fa fa-tags"></i>
     {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}/tags/#{{ tag }}" >{{ tag }} </a>{% unless page.tags.last == tag %}, {% endunless %}
+    <a href="{{ site.baseurl }}/tags/#{{ tag }}" >{{ tag }} </a>{% unless page.tags.last == tag %}  {% endunless %}
     {% endfor %}
     </p>
 
