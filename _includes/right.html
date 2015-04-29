@@ -12,6 +12,14 @@
     <ul >
       {% if site.weibo_username %}
       <li>
+        <a href="mailto:{{ site.email }}">
+          <i class="fa fa-envelope"></i>
+          <span class="username">{{ site.email }}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if site.weibo_username %}
+      <li>
         <a href="http://weibo.com/{{ site.weibo_username }}">
           <i class="fa fa-weibo"></i>
           <span class="username">{{ site.weibo_username }}</span>
