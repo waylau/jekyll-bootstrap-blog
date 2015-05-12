@@ -3,6 +3,12 @@ body {
 }
 img { max-width: 100%;}
 
+.avatar {
+  border-radius: 6px;
+  height: 230px;
+  width: 230px;
+}
+
 #goToTop{
 
   display:block;
