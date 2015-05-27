@@ -7,7 +7,9 @@ A theme for Jekyll to build a personal blog, based on [Bootstrap 3](http://getbo
 
 ##Screenshots
 
-![](http://99btgc01.info/uploads/2015/05/001%2811%29.jpg)
+![](http://99btgc01.info/uploads/2015/05/001.png)
+![](http://99btgc01.info/uploads/2015/05/002.png)
+
 
 ##Demo
 
