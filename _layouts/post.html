@@ -6,7 +6,7 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta"> {{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }}{% if page.meta %}  {{ page.meta }}{% endif %}
-    <i class="fa fa-bookmark"></i>
+    <i class="fa fa-file"></i>
     {% for cat in page.categories %}
     <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == category %}  {% endunless %}
     {% endfor %}

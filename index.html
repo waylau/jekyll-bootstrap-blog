@@ -10,7 +10,7 @@ index: true
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2 >
     {{ post.date | date: "%Y" }}-{{ post.date | date: "%m" }}-{{ post.date | date: "%d" }}
-    <i class="fa fa-bookmark"></i>
+    <i class="fa fa-file"></i>
     {% for cat in post.categories %}
     <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>
     {% endfor %}
