@@ -45,6 +45,16 @@
       </li>
       {% endif %}
 
+	  {% if site.facebook_username %}
+      <li>
+        <a href="https://facebook.com/{{ site.facebook_username }}">
+          <i class="fa fa-facebook"></i>
+          <span class="username">{{ site.facebook_username }}</span>
+        </a>
+      </li>
+      {% endif %}
+
+
       {% if site.rss_url %}
       <li>
         <a href="{{ site.rss_url | prepend: site.baseurl }}">
