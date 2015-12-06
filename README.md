@@ -37,6 +37,7 @@ You can see the theme running on [my blog](http://www.waylau.com/).
 	twitter_username: waylau521
 	github_username:  waylau
 	weibo_username: waylau521
+	facebook_username: waylau521
 	duoshuo_username: waylau
 	baidushare_id: 89860593
 	baidutongji_id: 28cf5fa48a599e39c5cc760931de942f
