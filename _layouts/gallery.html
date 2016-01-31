@@ -9,14 +9,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 blog-main">
+
+      <div class="col-sm-12 col-md-12 col-lg-12 blog-main">
         {{ content }}
        </div>
 
-      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-        {% include right.html %}
-
-      </div>
     </div>
   </div>
 
@@ -32,19 +29,10 @@
 <script src="/scripts/jquery-1.11.2.min.js"></script>
 <script src="/scripts/nprogress.js"></script>
 <script src="/scripts/bootstrap.min.js"></script>
+<script src="/scripts/lightbox.js"></script>
 <script src="/scripts/main.js" ></script>
-{% if site.duoshuo_username %}
-<script>
-  var duoshuoQuery = {short_name:"{{ site.duoshuo_username }}"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-{% endif %}
+
+
 {% if site.baidutongji_id %}
 {% include baidutongji.html %}
 {% endif %}
