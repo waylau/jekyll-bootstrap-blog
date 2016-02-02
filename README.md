@@ -7,6 +7,7 @@ A theme for Jekyll to build a personal blog, based on [Bootstrap 3](http://getbo
 * Mobile First
 * Syntax Highlighting 
 * Jekyll 3 Supported
+* SEO Friendly
 
 ## Screenshots
 
