@@ -1,9 +1,9 @@
 # Site settings
-title: Way Lau's Personal Site
-name: Way Lau's Personal Site
-url: "http://www.waylau.com"
+title: 柳伟卫的个人网站 Way Lau's Personal Site - 关注编程、系统架构、性能优化
+name: 柳伟卫的个人网站 Way Lau's Personal Site
+url: "http://waylau.com"
 email: waylau521@gmail.com
-description: Way Lau's Personal Site | www.waylau.com.
+description: 柳伟卫的个人网站 Way Lau's Personal Site - 关注编程、系统架构、性能优化 | waylau.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: waylau521
 github_username:  waylau

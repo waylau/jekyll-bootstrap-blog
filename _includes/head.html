@@ -1,14 +1,14 @@
 <head>
 	<!--
 	 **
-	 * Author:         www.waylau.com
+	 * Author:         waylau.com
 	 * Theme Name:     jekyll-bootstrap-blog
 	 **
 	-->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | www.waylau.com{% else %}{{ site.title }}| www.waylau.com{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} | waylau.com{% else %}{{ site.title }}| waylau.com{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{{ page.tags | join: ',' }}" />
 
@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/highlight/agate.css">
   <script src="/scripts/jquery-1.11.2.min.js"></script>
+
   <script src="/scripts/highlight.pack.js"></script>
 
   <script>hljs.initHighlightingOnLoad();</script>
-
 </head>
