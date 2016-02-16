@@ -5,15 +5,16 @@ url: "http://waylau.com"
 email: waylau521@gmail.com
 description: 柳伟卫的个人网站 Way Lau's Personal Site - 关注编程、系统架构、性能优化 | waylau.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-twitter_username: waylau521
-github_username:  waylau
-weibo_username: waylau521
-facebook_username: waylau521
-duoshuo_username: waylau
-baidushare_id: 89860593
-baidutongji_id: 28cf5fa48a599e39c5cc760931de942f
-rss_url: "/feed.xml"
-logo_image: "/images/logo.png"
+twitter_username: waylau521  # Twitter ID
+github_username:  waylau # Github ID
+weibo_username: waylau521  # Weibo ID
+facebook_username: waylau521  # Facebook ID
+duoshuo_username: waylau # Duoshuo ID
+baidushare_id: 89860593 #  百度分享 ID
+baidutongji_id: 28cf5fa48a599e39c5cc760931de942f # 百度统计 ID
+google-analytics_id: UA-50593531-1  # Google Analytics ID
+rss_url: "/feed.xml"  # RSS 订阅 URL
+logo_image: "/images/logo.png"  # LOGO 图片地址
 # Build settings
 gems: [jekyll-paginate]
 markdown: rdiscount
@@ -21,4 +22,4 @@ highlighter: pygments
 permalink: /:title/
 paginate: 8
 paginate_path: page/:num
-
+ 
