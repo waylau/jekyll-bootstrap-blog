@@ -11,13 +11,13 @@ A theme for Jekyll to build a personal blog, based on [Bootstrap 3](http://getbo
 
 ## Screenshots
 
-![](http://99btgc01.info/uploads/2016/01/01.jpg)
+![](img/20161203-screenshots-01.png)
 
-![](http://99btgc01.info/uploads/2016/01/02%281%29.jpg)
+![](img/20161203-screenshots-02.png)
 
 ## Demo
 
-You can see the theme running on [my blog](http://www.waylau.com/).
+You can see the theme running on [my blog](https://waylau.com/).
 
 <!-- more -->
 
@@ -71,6 +71,19 @@ class: post
 ```
 
 Add content below this and save the post in `_posts` directory (you will have to create it).
+
+### Page excluded from top bar nav
+
+By default, created pages will show on the top bar nav. If you want page excluded from top bar nav, you just add`excludedFromNav: true` in the page as below: 
+
+```
+---
+layout: page
+title: Labs
+permalink: /labs/
+excludedFromNav:true
+---
+```
 
 ## License
 
