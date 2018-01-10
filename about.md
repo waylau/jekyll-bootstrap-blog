@@ -4,23 +4,23 @@ title: About
 permalink: /about/
 ---
 
-##关于作者
+## 关于作者
 
-###Specialties:
+### Specialties:
 
 * J2EE web programming development.
 * Flex/AS3 programming development.
 * HTML5/JS/CSS/SVG programming development.
 * Self-educated/Self-training.
 
-###Hobby:
+### Hobby:
 
 * Riding mountain bike.
 * Go travelling far away.
 * Watching science-fiction movies.
 * Learning English.
 
-###Contact:
+### Contact:
 
 * blog:[www.waylau.com](http://www.waylau.com)
 * gmail: [waylau521@gmail.com](mailto:waylau521@gmail.com)
@@ -29,7 +29,7 @@ permalink: /about/
 * csdn: [kkkloveyou](http://blog.csdn.net/kkkloveyou)
 * oschina: [waylau](http://my.oschina.net/waylau)
 
-###Open source:
+### Open source:
 
 * Github : [waylau](https://github.com/waylau)
 
